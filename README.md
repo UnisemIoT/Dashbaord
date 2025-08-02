@@ -28,7 +28,7 @@ A modern, responsive landing page for UnisemIoT.com - an AI-Integrated IoT Platf
 
 1. **Clone the repository:**
    ```bash
-   git clone <repository-url>
+   git clone (https://github.com/UnisemIoT/Dashbaord.git)
    cd unisemiot-landing
    ```
 
@@ -45,79 +45,7 @@ A modern, responsive landing page for UnisemIoT.com - an AI-Integrated IoT Platf
 4. **Open your browser:**
    Navigate to `http://localhost:5173`
 
-## 🔧 Configuration
 
-### Google reCAPTCHA Setup
-
-1. Go to [Google reCAPTCHA](https://www.google.com/recaptcha/)
-2. Create a new site with reCAPTCHA v2
-3. Replace the test site key in `src/components/Contact.tsx`:
-   ```tsx
-   <ReCAPTCHA
-     sitekey="YOUR_ACTUAL_SITE_KEY_HERE"
-     onChange={handleCaptchaChange}
-     theme="dark"
-   />
-   ```
-
-### EmailJS Integration
-
-1. Create an account at [EmailJS](https://www.emailjs.com/)
-2. Set up your email service and template
-3. Update the contact form submission logic in `src/components/Contact.tsx`
-
-### Google Maps Integration
-
-The Google Maps embed in the Contact section uses a placeholder URL. To use your actual location:
-
-1. Go to [Google Maps](https://maps.google.com)
-2. Search for your address
-3. Click "Share" → "Embed a map"
-4. Copy the iframe src URL
-5. Replace the iframe src in `src/components/Contact.tsx`
-
-## 🎨 Customization
-
-### Colors and Theming
-
-The design uses a custom color palette defined in `src/index.css`:
-
-```css
-/* Primary purple gradient */
-.gradient-purple {
-  background: linear-gradient(135deg, #8b5cf6 0%, #a855f7 100%);
-}
-
-/* Glassmorphism cards */
-.glass-card {
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-}
-```
-
-### Logo and Branding
-
-To update the logo:
-1. Replace the Zap icon in `src/components/Header.tsx`
-2. Add your logo file to the `public` folder
-3. Import and use your custom logo component
-
-### Content Updates
-
-Key content areas to customize:
-
-- **Hero Section**: Update tagline and description in `src/components/Hero.tsx`
-- **Features**: Modify feature cards in `src/components/Features.tsx`
-- **Pricing**: Update pricing tiers in `src/components/Pricing.tsx`
-- **Contact Info**: Update company details in `src/components/Contact.tsx`
-
-### Sections Management
-
-To add, remove, or reorder sections:
-1. Update the main App component in `src/App.tsx`
-2. Modify navigation links in `src/components/Header.tsx`
-3. Ensure section IDs match navigation href values
 
 ## 🚀 Deployment
 
@@ -134,26 +62,7 @@ To add, remove, or reorder sections:
    - Set publish directory: `dist`
    - Deploy automatically on push
 
-### Vercel
 
-1. **Install Vercel CLI:**
-   ```bash
-   npm install -g vercel
-   ```
-
-2. **Deploy:**
-   ```bash
-   vercel --prod
-   ```
-
-### Manual Deployment
-
-1. **Build the project:**
-   ```bash
-   npm run build
-   ```
-
-2. **Upload the `dist` folder** to your web server
 
 ## 📱 Responsive Design
 
@@ -229,14 +138,8 @@ To add analytics tracking:
 ## 📞 Support
 
 For technical support or customization requests:
-- Email: hello@unisemiot.com
+- Email: info@unisemiot.com
 - Documentation: Check component comments for detailed usage
 - Issues: Create GitHub issues for bugs or feature requests
-
-## 📄 License
-
-This project is proprietary software for UnisemIoT.com. All rights reserved.
-
----
 
 **Built with ❤️ for UnisemIoT - Empowering IoT Networks with Intelligent AI**
